@@ -46,6 +46,7 @@ NSString *const BLCImageFinishedNotification = @"BLCImageFinishedNotification";
     self = [super init];
     
     if (self) {
+        NSLog(@"this is alot of OBJ-C code wowie.");
         NSURL *baseURL = [NSURL URLWithString:@"https://api.instagram.com/v1/"];
         self.instagramOperationManager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:baseURL];
         AFJSONResponseSerializer *jsonSerializer = [AFJSONResponseSerializer serializer];
